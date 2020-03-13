@@ -12,7 +12,9 @@ def index() :
 
 @app.route('/base')
 def base():
-    return render_template('base.html') 
+    name = 'Angel'
+    todo = ['Running', 'Swimming', 'McD']
+    return render_template('base.html', name=name) 
 
 # error handling
 @app.errorhandler(404)
