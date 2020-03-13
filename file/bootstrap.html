@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP TEMPLATE DOWN HERE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <!-- Mulai menyusun halaman disini-->
+    <h1>BOOTSTRAP 101</h1>
+    <h1 class="display-1">My Dashboard 1</h1>
+    <h1 class="display-4">My Dashboard 4</h1>
+    <p class="font-weight-bold">
+        Font Weight Bold
+    </p>
+    <p class="font-italic">
+        Font Italic
+    </p>
+
+    <p class="text-uppercase">
+        Text uppercase
+    </p>
+
+    <p class="text-lowercase">
+        TEXT LOWERCASE
+    </p>
+
+    <p class="text-capitalize">
+        text capitalize
+    </p>
+    <!-- alignment -->
+    <p class="text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo,
+        quisquam vitae repudiandae voluptates reiciendis quibusdam quas odit autem sapiente ipsa expedita numquam?
+        Quidem libero rerum sequi minima optio suscipit!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ab sunt officiis, labore recusandae fuga repellendus minus mollitia iure error excepturi. Quos totam quo optio voluptatibus aliquam? Nisi, soluta placeat!
+    </p>
+    <p class="text-left">
+        align text left Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis autem?
+    </p>
+    <p class="text-center">
+        align text center Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, in quam.
+    </p>
+    <p class="text-right">
+        align text right Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, adipisci laboriosam?
+    </p>
+    <!-- color -->
+    <p class="font-weight-bold text-primary">Texxt Primary Color (biru)</p>
+    <p class="display-4 font-italic text-secondary">Texxt Secondary Color (abu2)</p>
+    <p class="text-success text-uppercase text-center">Texxt Success Color (hijau)</p>
+    <p class="text-danger">Texxt Danger Color (merah)</p>
+    <p class="text-warning">Texxt Warning Color(kuning)</p>
+    <p class="text-dark text-center">Texxt Dark Color (hitam)</p>
+  
+    <!-- box model -->
+    <!-- Block element -->
+    <!-- sebuah element yang memiliki lebar memenuhi tag parent 
+    Block element dapat diatur lebar, tinggi, dan marginnya
+    contoh block element : j1 (1- 6),p,div
+    -->
+    <!-- 
+        inline element
+        sebuah element yang memiliki lebar sesuai konten
+        contoh : span, b, i
+
+     -->
+    <!--  
+        <h1>My Dashboard</h1>
+        tag      : h1
+        content  : 'My Dashboard'
+        element  : tag + content
+    
+        padding : jarak dari content ke border
+        class   : p-1 hingga p-5
+        padding-top : pt
+        padding-right : pr
+        padding-bottom : pb
+        padding-left: pl
+        
+        padding-left and padding-right : px
+        padding-top and padding-bottom : py
+        
+        all side : p
+                
+        pt-3: padding bagian atas sebesar 3
+        pb-2 : padding bagian bawah sebesar 2
+        margin : jarak dari content ke luar element
+        class   : m-1 hingga m-5
+        margin-top : mt
+        margin-right : mr
+        margin-bottom : mb
+        margin-left: ml
+        
+        padding-left and padding-right : mx
+        padding-top and padding-bottom : my
+        
+        all side : M
+        
+        mt-3: margin bagian atas sebesar 3
+        mb-2 : margin bagian bawah sebesar 2
+        margin collapse
+        dimana margin dua element yang bertemu secara VERTIKAL akan diambil yang paling besar
+    -->
+    <!-- margin vertical -->
+    <div class=" mb-5 pt-4 pl-4 pr-3 pb-3  bg-primary">
+        ini merupakan sebuah konten 1
+    </div>
+    <div class=" text-center mr-3 mb-3 text-light bg-secondary">
+        ini merupakan sebuah konten 2
+    </div>
+    <div class="ml-3 mb-5 bg-success">
+        ini merupakan sebuah konten 3
+    </div>
+    <!-- margin horizontal -->
+    <div style="width: 300px;" class=" d-inline bg-primary">
+        ini merupakan sebuah konten 4
+    </div>
+    <div style="width: 300px;" class=" text-center mr-3 ml-3 text-light bg-secondary d-inline">
+        ini merupakan sebuah konten 5
+    </div>
+    <div style="width: 300px;" class=" ml-5 bg-success d-inline-block">
+        ini merupakan sebuah konten 6
+    </div>
+
+    <!-- form -->
+    <!-- input wajib untuk mengawali form -->
+    <form class="mt-5 mb-5 form-group container">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" id="name">
+        <label for="pswd">Password</label>
+        <input class="form-control" type="password" id="pswd">
+        <label for="email">E-mail</label>
+        <input class="form-control" type="email" id="email">
+        <label for="warna">Color</label>
+        <select class="form-control" id="warna">
+            <optgroup label="Merah">
+                <option>Merah Maroon</option>
+                <option>Merah Muda</option>
+            </optgroup>
+            <optgroup label="Biru">
+                <option>Biru Dongker</option>
+                <option>Biru Laut</option>
+            </optgroup>
+            <optgroup label="Hijau">
+                <option>Hijau Daun</option>
+                <option>Hijau Tosca</option>
+            </optgroup>
+            
+        </select>
+        <!-- mengirim data -->
+        <input class="btn mt-2 btn-block btn-primary" type="button" value="Sign In">
+        <input class="btn mt-2 btn-block btn-outline-primary" type="button" value="Sign Out">
+        <input class="btn mt-2 btn-block btn-success" type="button" value="Sign Up">
+        <!-- Refresh -->
+        <input class="btn mt-2 btn-block btn-outline-primary" type="submit" value="Submit">
+        <button class="btn mt-2 btn-block btn-outline-primary">Refresh</button>
+    </form>
+
+
+    <!-- GRID AND FLEX -->
+    <!-- GRID -->
+    <!-- AKAN MEMBAGI LELBAR ELEMENT MENAJDI 12 BAGIAN -->
+    <!-- dIGUNAKAN UNTUK MENENTUKAN LEBAR DARI ELEMENT LAIN (CHILD) -->
+    <!-- FLEX -->
+    <!-- DIGUNAKAN UNTUK MENGATUR POSISI ELEMENT (CHILD) -->
+
+    
+    <!-- parent -->
+    <div class="container">
+        <div style="height: 500px;" class="row d-flex bg-secondary justify-content-between align-content-center">
+            <!-- child -->
+            <div class="col-3 item bg-primary"> item 1</div>
+            <div class="col-3 item bg-success"> item 2</div>
+            <div class="col-3 item bg-warning"> item 3</div>
+        </div>
+        
+    </div>
+    <!-- flask -->
+
+
+
+
+
+
+
+
+
+
+
+    <div style="margin: 200px"
+</body>
+</html>
