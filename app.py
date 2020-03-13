@@ -13,8 +13,9 @@ def index() :
 @app.route('/base')
 def base():
     name = 'Angel'
-    todo = ['Running', 'Swimming', 'McD']
-    return render_template('base.html', name=name) 
+    todo = ['Running', 'Swimming', 'McD', 'Jumping', 'Hiking', 'KFC']
+    rain= True
+    return render_template('base.html', name=name, mytodo=todo, condition=rain) 
 
 # error handling
 @app.errorhandler(404)

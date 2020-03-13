@@ -7,5 +7,17 @@
 </head>
 <body>
     <h1>Hello, my name is {{name}}</h1>
+    {% if condition == True  %}
+        <h3>Today is raining</h3>
+    {% else %}
+        <h3>Today is not raining</h3>
+    
+    {% endif %}
+
+    <ul>
+        {% for todo in mytodo %}
+            <li>{{todo}}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
